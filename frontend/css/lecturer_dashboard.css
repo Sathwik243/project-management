@@ -1,0 +1,309 @@
+/* Global Styles */
+body.lecturer-dashboard {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('../assets/Lecturer_Dashboard.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.nav-center {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-btn {
+    background-color: #f44336;
+    border: none;
+    padding: 10px 15px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #d32f2f;
+}
+
+
+/* Button Container Styles */
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333; /* Background of the bar */
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.project-btn {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.project-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.project-btn.active {
+    background-color: white;
+    color: black;
+}
+
+/* Style for the anchor inside the Add button */
+.project-btn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Optional: If you want the buttons to stretch a bit and align neatly */
+.project-btn .redirect-btn {
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Redirect button styles */
+.redirect-btn {
+    background-color: #4CAF50; /* Green background for redirect button */
+    color: white;
+    border: none;
+}
+
+.redirect-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+/* Project List Styles */
+.project-list, .my-project-list {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    max-width: 90%;
+    margin: 20px auto;
+    color: #fff;
+}
+
+.project-item, .my-project-item {
+    border-bottom: 1px solid #fff;
+    padding: 15px 145px;
+}
+
+.project-title, .my-project-title {
+    font-size: 18px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-btn, .my-dropdown-btn, .my-edit-btn, .my-delete-button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-btn:hover, .my-dropdown-btn:hover, .my-edit-btn:hover, .my-delete-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Modal Styles */
+.my-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.my-modal-content {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.my-input, .my-textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.my-button {
+    background-color: #1e88e5;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.my-button:hover {
+    background-color: #1565c0;
+}
+
+
+/* Navbar styling */
+.navbar {
+    background-color: #000; /* Black background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+/* Center section with the welcome text */
+.nav-center {
+    flex: 12;
+    text-align: center;
+}
+
+.welcome-text {
+    color: white; /* White text color for the welcome message */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Right section with logout button */
+.nav-right {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #fff; /* White background on hover */
+    color: black; /* Text color changes to black */
+}
+
+/* Add styling for when hovering over the logout link */
+.nav-right .nav-link {
+    margin-left: 10px;
+}
+
+/* Footer Styles */
+/* Footer Styles */
+footer {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed; /* Fix the footer at the bottom */
+    bottom: 0; /* Align to the bottom of the page */
+    left: 0; /* Ensure it stretches across the entire width */
+    z-index: 1000; /* Keep the footer on top of other content */
+}
+
+footer .social-icons {
+    display: flex;
+}
+
+footer .social-icons a {
+    color: #fff;
+    font-size: 1.3rem;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #fff; /* No color change on hover for footer icons */
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin-right: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+/* Heading Container Styles */
+.heading-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333; /* Background of the bar */
+    padding: 10px 0;
+    width: 100%;
+}
+
+.project-heading {
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect for headings */
+.project-heading:hover {
+    background-color: white; /* Change background to white on hover */
+    color: black; /* Change text color to black on hover */
+}
+
+/* Active state for selected heading */
+.project-heading.active {
+    background-color: white; /* White background for active heading */
+    color: black; /* Black text for active heading */
+}
+
+/* Style for the anchor inside the "Add" heading */
+.project-heading a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Optional: Make headings look more like buttons */
+.project-heading {
+    padding: 10px 20px;
+    margin: 0 5px; /* Add some spacing between the headings */
+    border-radius: 5px; /* Optional rounded corners for visual effect */
+}
+

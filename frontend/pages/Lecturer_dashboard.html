@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecturer Dashboard</title>
+    <link rel="stylesheet" href="../css/lecturer_dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body class="lecturer-dashboard">
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-right">
+                <a id="allProjectsBtn" class="nav-link">All Projects</a>
+                <a id="MyProjects" class="nav-link">My Projects</a>
+                <a class="nav-link" href="addProject.html">Add Project</a>
+                <a class="nav-link" href="messages.html">Messages</a>
+            </div>
+            <div class="nav-right">
+                <a href="../pages/index.html" class="nav-link" id="logoutButton">Logout</a>
+            </div>
+        </nav>
+    </header>
+    
+
+    <main>
+       
+
+        <div id="projectList" ></div>
+        <div id="myProjectList"></div>
+
+        <!-- Edit Form Modal -->
+        <div id="edit-form-modal" class="my-modal" style="display: none;">
+            <div class="my-modal-content">
+                <span class="my-close" onclick="closeEditForm()">&times;</span>
+                <h2>Edit Project</h2>
+                <form id="edit-form">
+                    <label for="edit-title">Title:</label>
+                    <input type="text" id="edit-title" class="my-input" required>
+
+                    <label for="edit-topic-area">Topic Area:</label>
+                    <input type="text" id="edit-topic-area" class="my-input" required>
+
+                    <label for="edit-keywords">Keywords (comma-separated):</label>
+                    <input type="text" id="edit-keywords" class="my-input" required>
+
+                    <label for="edit-overview">Overview:</label>
+                    <textarea id="edit-overview" class="my-textarea" required></textarea>
+
+                    <label for="edit-objectives">Objectives:</label>
+                    <textarea id="edit-objectives" class="my-textarea" required></textarea>
+
+                    <button type="submit" class="my-button">Save Changes</button>
+                    <button type="button" class="my-button" onclick="closeEditForm()">Cancel</button>
+                </form>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Project Management System. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/Lecturer_Dashboard.js"></script>
+</body>
+</html>

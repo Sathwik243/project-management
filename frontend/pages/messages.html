@@ -1,0 +1,36 @@
+<!-- messages.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messages</title>
+  <link rel="stylesheet" href="../css/messages.css"> <!-- Link to the external CSS -->
+</head>
+<body>
+  <div class="container">
+    <h1>Messages</h1>
+    
+    <h2>Send a New Message</h2>
+    <form id="newMessageForm" action="/messages/send" method="POST" enctype="multipart/form-data">
+      <label for="recipientId">Recipient:</label>
+      <select name="recipientId" id="recipientId" required>
+        <option value="">Select Recipient</option>
+      </select>
+
+      <label for="messageText">Message:</label>
+      <textarea name="messageText" id="messageText" required></textarea>
+
+      <label for="attachment">Attachment:</label>
+      <input type="file" name="attachment" id="attachment" />
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Display received messages -->
+    <h2>Received Messages</h2>
+    <ul id="messageList"></ul>
+  </div>
+  <script src="../js/messages.js"></script> <!-- Link to the external JS -->
+</body>
+</html>

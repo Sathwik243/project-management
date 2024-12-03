@@ -1,0 +1,141 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    background: url('../assets/HomeBackground.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header styles */
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px 40px;
+    background-color: #000; /* Black background for the nav */
+    z-index: 10;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px; /* Reduced text size */
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 20px; /* Added padding for button appearance */
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #fff; /* White background on hover and active */
+    color: #000; /* Text turns black */
+    border-radius: 4px; /* Slightly rounded corners */
+}
+
+/* Home Section */
+/* Home Section */
+#home {
+    text-align: center;
+    padding: 80px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better readability */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#home h1 {
+    font-size: 2.5rem; /* Adjust heading size */
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1.4; /* Controls the space between lines */
+    word-wrap: break-word; /* Ensures the title breaks into a new line */
+    max-width: 80%; /* Limits the width for better control */
+    margin: 0 auto; /* Centers the heading */
+}
+
+#home p {
+    font-size: 1.5rem;
+    color: #ddd;
+    font-style: italic;
+    font-weight: 400;
+}
+
+#home a {
+    color: #fff; /* Set link color to white */
+    text-decoration: none; /* Remove underline */
+    font-weight: 600; /* Slightly bolder for emphasis */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+#home a:hover {
+    color: #f39c12; /* Gold color on hover */
+}
+
+#home .icon {
+    font-size: 3rem; /* Font awesome icon size */
+    color: #f39c12; /* Gold color for icons */
+    margin-bottom: 20px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: space-between; /* Space out icons and text */
+    align-items: center; /* Vertically center content */
+    padding: 10px 20px; /* Further reduced padding for minimal height */
+    width: 100%;
+    height: auto; /* Ensures footer height adapts to content */
+}
+
+footer .social-icons {
+    display: flex; /* Align icons in a row */
+}
+
+footer .social-icons a {
+    color: #fff; /* White color for icons */
+    font-size: 1.3rem; /* Smaller icons */
+    margin: 0 10px; /* Reduced margin between icons */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #f39c12; /* Gold color on hover */
+}
+
+footer p {
+    font-size: 0.9rem; /* Adjusted size for copyright text */
+    margin: 0; /* Remove margin for alignment */
+}

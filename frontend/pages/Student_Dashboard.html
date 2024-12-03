@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="../css/Student_Dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Student Dashboard Header with Navbar -->
+        <nav class="navbar">
+            <div class="nav-left">
+                <button id="allProjectsBtn" class="project-btn">All Projects</button>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search for projects..." class="my-search-input">
+                    <button id="search-button" class="my-search-button">Search</button>
+                </div>
+                <a class="nav-link" href="messages.html">Messages</a>
+            </div>
+            <div class="nav-right">
+                <button id="logoutButton">Logout</button>
+            </div>
+        </nav>
+
+        <!-- Projects List Section -->
+        <section id="projects-list" class="my-projects-list">
+            <!-- Search results will be dynamically inserted here -->
+        </section>
+
+        <div id="projectList"></div>
+    </div>
+    <footer>
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Project Management System. All rights reserved.</p>
+    </footer>
+    <!-- External JavaScript file -->
+    <script src="../js/Student_Dashboard.js"></script>
+</body>
+</html>
+

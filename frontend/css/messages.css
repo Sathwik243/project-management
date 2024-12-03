@@ -1,0 +1,134 @@
+/* Basic Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('../assets/StudentDashboard.jpg'); /* Add your background image here */
+  color: #333;
+}
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 40px;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input[type="file"], textarea, select, button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button.reply-btn {
+  background-color: #007bff;
+  color: white;
+  font-size: 14px;
+}
+
+button.reply-btn:hover {
+  background-color: #0056b3;
+}
+
+
+select {
+  background-color: #fff; /* White background for the dropdown */
+  color: #333; /* Dark text color */
+  font-size: 16px; /* Adjust font size */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+/* General styling for the select dropdown */
+select {
+  background-color: #fff !important; /* White background for the dropdown */
+  color: #333 !important; /* Dark text color */
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  appearance: none; /* Remove native dropdown arrow */
+  -webkit-appearance: none; /* Remove native dropdown arrow in Webkit-based browsers */
+  -moz-appearance: none; /* Remove native dropdown arrow in Firefox */
+}
+
+/* Optional: style the dropdown arrow */
+select::-ms-expand {
+  display: none; /* Remove the arrow in IE */
+}
+
+/* Styling for the options within the select dropdown */
+select option {
+  background-color: #fff !important; /* White background for options */
+  color: #333 !important; /* Dark text color for the options */
+  padding: 10px;
+}
+
+/* Optional: change background color on hover for better UX */
+select option:hover {
+  background-color: #f1f1f1; /* Light gray background on hover */
+}
+
+/* Focus style for the select dropdown */
+select:focus {
+  border-color: #007bff;
+  outline: none; /* Remove the default outline */
+}

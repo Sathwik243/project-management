@@ -1,0 +1,163 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general layout */
+/* Body Background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('../assets/LoginPageBackground.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire page */
+    height: 100vh;
+}
+
+/* Container for the login form */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    z-index: 1;
+    position: relative; /* Keeps the form on top of the background */
+}
+
+/* Form styling */
+.login-form {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for readability */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.input-container label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.input-container input,
+.input-container select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.input-container input:focus,
+.input-container select:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none;
+}
+
+.input-container input::placeholder {
+    color: #999;
+}
+
+/* Submit Button Styling */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    color: #fff; /* White text */
+    background-color: #000; /* Black background */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.login-button:hover {
+    background-color: #333; /* Darker black on hover */
+}
+
+
+
+
+/* Navbar Styles */
+/* Navbar Styles */
+.navbar {
+    background-color: #000; /* Black background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #fff; /* White background on hover */
+    color: black; /* Text color changes to black */
+}
+
+.nav-right .nav-link {
+    margin-left: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    height: auto;
+}
+
+footer .social-icons {
+    display: flex;
+}
+
+footer .social-icons a {
+    color: #fff;
+    font-size: 1.3rem;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #fff; /* No color change on hover for footer icons */
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin: 0;
+}

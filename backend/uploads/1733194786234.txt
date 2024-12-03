@@ -1,0 +1,10 @@
+1. Access roles in Details Page , Edit , Create , Delete button for Admin , Only Like button for member , No like button for Guest
+2. Like Button Increased 
+3. Descending order based on the likes 
+4. Exception Handling.
+5. Edit the Pictures 
+
+
+1.Header Color
+2. Opacity Brown Color 
+3. view port java script
